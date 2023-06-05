@@ -1,0 +1,52 @@
+ <defs>
+        <style type="text/css"><![CDATA[
+
+.north{
+    fill: skyblue;
+    <!-- stroke: black; -->
+    stroke-width: -2px;
+    
+}
+
+.north:hover {
+filter: url(#shadow);
+margin-right: 10px;
+}
+.central{
+    fill: lightcoral;
+       stroke: black;
+    stroke-width: -2px;
+}
+.west{
+    fill: aliceblue;
+       stroke: black;
+    stroke-width: 2px;
+}
+.south{
+    fill: lightgreen;
+       stroke: black;
+    stroke-width: 2px;
+}
+.east{
+    fill: orange;
+       stroke: black;
+    stroke-width: 2px;
+}
+.northeast{
+    fill: rgb(0, 251, 255);
+       stroke: black;
+    stroke-width: 2px;
+}
+
+    ]]></style>
+
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="0" stdDeviation="5 5"
+                flood-color="blue" />
+        </filter>
+        <feComposite
+            operator='over'
+            in='shadow'
+            in2='SourceGraphic'
+        />
+    </defs>
